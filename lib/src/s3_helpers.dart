@@ -103,7 +103,7 @@ int implyPort(bool ssl) {
 }
 
 String dateV2(DateTime time) =>
-    '${DateFormat('EEE, dd MMM y HH:mm:ss').format(time)} GMT';
+    '${DateFormat('EEE, dd MMM y HH:mm:ss','en_US').format(time)} GMT';
 
 String makeDateLong(DateTime date) {
   final isoDate = date.toIso8601String();
